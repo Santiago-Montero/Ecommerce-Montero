@@ -1,0 +1,31 @@
+.itemContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 500ms ease-out;
+    width: 200px;
+    height: 250px;
+}
+
+.itemContainer:hover{
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+.itemContainer img{
+    border-radius: 20px;
+    width: 150px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.itemContainer p{
+    margin-left: 5px;
+    display: flex;
+    color: black;
+    font-size: 15px;
+}
+.itemContainerLink{
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+.cart{
+    height: 100%;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.cartTitle{
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cartDescription{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+.cartDescriptionItems{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.cartDescriptionTicket{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.cartDescriptionTicketBtn{
+    margin-top: 100px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom' ;
+import NavBar from './components/NavBar/NavBar'
+import Home from './views/Home'
+import Category from './views/Category'
+import Cart from './components/Cart/Cart'
+import SingIn from './views/SingIn'
+import Notification from './components/Notification/Notification';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartContextProvider } from './context/CartContext';
+import { NotificationContextProvider } from './context/NotificationContext';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CartContextProvider>
+        <NotificationContextProvider> 
+          <BrowserRouter>
+            <NavBar />
+              <Switch>
+                <Route exact path='/'>
+                  <Home />
+                </Route>
+                <Route path='/category/:categoryId'>
+                  <Category />
+                </Route>
+                <Route path='/cart'>
+                  <Cart />
+                </Route>   
+                <Route path='/product/:itemId'>
+                  <ItemDetailContainer />
+                </Route> 
+                <Route path='/singin'>
+                  <SingIn />
+                </Route>
+              </Switch>
+            <Notification />
+          </BrowserRouter>
+        </NotificationContextProvider>
+      </CartContextProvider>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+
+.homeSplide img{
+    border-radius: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.form{
+    background:#e6e6e6;
+    border-radius:8px;
+    padding:20px 30px;
+    box-sizing:border-box;
+}
+.form h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    color:#0D0D0D;
+    border-bottom:3px solid #6a6a6b;
+}
+.formLlenar{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #686969;
+}
+.boton{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.formLlenar:focus{
+    border-bottom:2px solid #121313;
+}
+.btnInicio{
+    margin-top: 100px;;
+}

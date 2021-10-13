@@ -1,0 +1,16 @@
+.itemCart img{
+    width: 100px;
+    height: auto;
+}
+.itemCart {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 500ms ease-out;
+}
+.itemCart:hover{
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}

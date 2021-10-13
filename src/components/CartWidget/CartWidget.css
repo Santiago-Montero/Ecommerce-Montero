@@ -1,0 +1,18 @@
+.cartWidget{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.cartWidgetImg img{
+    width: 32px;
+    height: auto;
+}
+.cartWidgetP{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+}

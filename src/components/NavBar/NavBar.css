@@ -1,0 +1,24 @@
+.navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.navbar marquee{
+    color: white;
+    background-color: black;
+}
+.navegador{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navegador li {
+    display: flex;
+    align-items: center;
+}
+.categorias{
+    text-decoration: none;
+    color:black;
+}

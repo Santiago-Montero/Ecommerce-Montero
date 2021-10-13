@@ -1,0 +1,38 @@
+.itemDetailContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.itemDetailContainerImg img{
+    width: 200px;
+    height: auto;
+}
+
+.imagenes img{
+    width: 30px;
+    height: auto;
+}
+
+.description{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemDetail{
+    display: flex;
+    flex-flow: column wrap;
+}
+.descriptionItemCount{
+    margin-top: 20px;
+}
+.itemDetailContainerText{
+    margin-top:100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.itemDetailContainerTextDesc{
+    display: flex;
+    justify-content: flex-start;
+}

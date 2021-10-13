@@ -1,0 +1,29 @@
+.itemCount{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgb(242, 242, 250);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.itemCountText{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.botonCarrito{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.waist{
+    display: flex;
+    flex-flow: row wrap;
+}
