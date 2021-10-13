@@ -85,19 +85,3 @@ function Cart (){
 }
 
 export default Cart;
-
-/*
-<div className="cart">
-    <div className="cartTitle">
-
-    </div>
-    <div className="cartDescription">
-        <div className="cartDescriptionItems">
-
-        </div>
-        <div className="cartDescriptionTicket">
-
-        </div>
-    </div>
-</div>
-*/
