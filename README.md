@@ -4,7 +4,7 @@ _Es un proyecto SPA (single page aplication), construido con React.js con una ba
 _Para la construccion del proyecto instale algunas librerias/frameworks como bootstrap 5.1 , splice js ( para poder agregar sliders/carousels )._
 
 ### Navegacion por el proyecto :
-![Navegacion por la pagina](https://i.imgur.com/7rdAvq5.gif)
+![Navegacion por la pagina](https://i.imgur.com/MJleJbp.gif)
 ### Estructura del Proyecto :
 
 _En cada proyecto React generalmente se crean los archivos basicos, los cuales no modifique, por lo tanto nada mas voy a definir la estructura de la carpeta 'src'._
