@@ -3,12 +3,12 @@ import ItemCount from '../ItemCount/ItemCount'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import { Link } from 'react-router-dom';
 
 function ItemDetail({item}){
 
     const imagenes = item.imgs
     
-
     return(
         <>
         <div className="itemDetailContainerImg"> 
@@ -33,15 +33,26 @@ function ItemDetail({item}){
                         <p>Stock : {item?.stock}</p>
                     </div>
                 </div>
-            <div className="itemDetailContainerText container">
-                <div className="itemDetailContainerTextTitulo">
-                    <h4>Descripcion</h4>
-                </div>
-                <div className="itemDetailContainerTextDesc">
-                    <p>{item.description}</p>
-                </div>
-                
-            </div>
+                {
+                    item.description ?
+                    <div className="itemDetailContainerText container">
+                        <div className="itemDetailContainerTextTitulo">
+                            <h4>Descripcion</h4>
+                        </div>
+                        <div className="itemDetailContainerTextDesc">
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                    :
+                    <div className="itemDetailContainerText container">
+                        <div className="itemDetailContainerTextTitulo">
+                            <h4>Sin Descripcion</h4>
+                        </div>
+                    </div>
+                }
+                <Link to={'/'}>
+                    <button className="btn btn-secondary btnInicio">Inicio</button>
+                </Link>
         </div>
         </>
     );

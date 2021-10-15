@@ -1,4 +1,5 @@
 .itemContainer{
+    margin-top: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;

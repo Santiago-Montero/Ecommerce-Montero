@@ -18,15 +18,18 @@ function Category (){
     if(itemsCategory.length === 0){
         return(
             <>
-            <h1> Categorias</h1>
-            <h2>No se encontro resultado</h2>
+                <div className="spinner-grow" role="status">
+                    <span className="visually-hidden">Cargando...</span>
+                </div> 
             </>
         );
     }
     return(
         <>
-        <h1>{categoryId}</h1>
-        <ItemListContainer items={itemsCategory}/>
+        <div className="container"> 
+            <h1>{categoryId}</h1>
+            <ItemListContainer items={itemsCategory}/>
+        </div>
         </>
     );
 }

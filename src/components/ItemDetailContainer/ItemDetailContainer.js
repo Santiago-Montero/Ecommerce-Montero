@@ -21,7 +21,13 @@ function ItemListDetailContainer (){
     return(
         <>
         <div>
-            {!item ? <h1>Cargando</h1> : <ItemDetail key={item.id} item={item}/>}
+            {!item ? 
+                    <div className="spinner-grow" role="status">
+                        <span className="visually-hidden">Cargando...</span>
+                    </div> 
+                    :
+                    <ItemDetail key={item.id} item={item}/>
+            }
         </div>
         
         </>

@@ -6,7 +6,7 @@ function ItemListContainer ({items}){
     return(
         <>
         <div>
-            <ItemList key={items.id} itemList={items}/>
+            {items ? <ItemList key={items.id} itemList={items}/> : <h1>No se encontro ningun Item</h1>}
         </div>
         </>
     );

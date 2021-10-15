@@ -1,9 +1,11 @@
-
-.homeSplide img{
-    border-radius: 20px;
-    width: 150px;
-    height: auto;
+.home{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 
 .form{
     background:#e6e6e6;
